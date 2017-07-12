@@ -1,0 +1,175 @@
+doctype html
+html(lang='en')
+  head
+
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no')
+
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='vendors/material-kit/css/material-kit.css')
+    link(rel='stylesheet', type='text/css', href='css/main.css')
+  body
+
+    section#badass-hero.container-fluid
+      .row
+        #ember
+        #ember2
+        #ember3
+        #hero-content.col.text-center.d-flex.align-items-end.align-items-md-center.wow.fadeIn(data-wow-delay='.3s')
+          .col-12.col-md-6.push-md-6
+            h1 BABYMETAL
+            h2 LIVE AT TOKYO DOME
+            p
+              | Download 
+              span.font-weight-bold here
+              |  subtitles for your 
+              span.font-weight-bold precious
+              |  blurays
+            a#redNight.btn.btn-primary.btn-round.red-btn.hidden-sm-down.responsive-btn(href='#tokyo-dome-rednight') Red Night
+            a#blackNight.btn.btn-primary.btn-round.black-btn.hidden-sm-down.responsive-btn(href='#tokyo-dome-blacknight') Black Night
+    
+    section#delorean-list
+      #tokyo-dome
+        #tokyo-dome-rednight.delorean
+          .container-fluid
+            #red-bd.row.d-flex.align-items-center
+              .col-12.col-lg-6.img-col.d-flex.align-items-center
+                img.img-fluid(src='img/large/rednight.jpg', alt='Red Night')
+              .col-12.col-lg-6.bd-text.text-center.wow.fadeInRight(data-wow-delay='.2s')
+                .text-container
+                  h1.text-uppercase Babymetal
+                  h2
+                    | Live at 
+                    em tokyo dome
+                  h3
+                    | Red 
+                    span.font-weight-bold Night
+                  .btn-group
+                    a.btn.btn-primary.red-btn.td-rn-download.responsive-btn(href='#') Download
+                    button.btn.btn-primary.red-btn.dropdown-toggle.dropdown-toggle-split.responsive-btn(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      span.sr-only Toggle Dropdown
+                    .dropdown-menu
+                      a.dropdown-item.td-rn-download-eng.responsive-btn(href='#') English Only
+                      a.dropdown-item.td-rn-download-spa.responsive-btn(href='#') Spanish Only
+                      .dropdown-divider
+                      a.dropdown-item.responsive-btn.responsive-btn(href='#') Github Link
+                  a.btn.btn-info.responsive-btn(href='/') Bluray
+        #tokyo-dome-rednight-stats
+          .container-fluid.padding-0
+            #red-downloads.row.d-flex.align-items-center.swiper-container
+              .col-3.text-center.swiper-wrapper
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .english-kitsunes.wow.zoomIn
+                    img.img-fluid(src='img/icon/fancy-hat.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold English
+                      |  Downloads
+                    p.release-eng.stat.count
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .spanish-kitsunes.wow.zoomIn(data-wow-delay='.2s')
+                    img.img-fluid(src='img/icon/fighter-mask.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold Spanish
+                      |  Downloads
+                    p.release-spa.stat
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .total-kitsunes.wow.zoomIn(data-wow-delay='.4s')
+                    img.img-fluid(src='img/icon/earth.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold Total
+                      |  Downloads
+                    p.release-total.stat
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .last-update.wow.zoomIn(data-wow-delay='.6s')
+                    img.img-fluid(src='img/icon/update.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold Last
+                      |  Update
+                    p.release-date.stat
+        #tokyo-dome-blacknight.delorean
+          .container-fluid
+            #black-bd.row.d-flex.align-items-center
+              .col-12.col-lg-6.push-lg-6.img-col.d-flex.align-items-center
+                img.img-fluid(src='img/large/blackNight.jpg', alt='Red Night')
+              .col-12.col-lg-6.pull-lg-6.bd-text.text-center.wow.fadeInLeft(data-wow-delay='.2s')
+                .text-container
+                  h1.text-uppercase Babymetal
+                  h2
+                    | Live at 
+                    em tokyo dome
+                  h3
+                    | Black 
+                    span.font-weight-bold Night
+                  .btn-group
+                    a.btn.btn-primary.black-btn.td-bn-download.responsive-btn(href='#') Download
+                    button.btn.btn-primary.black-btn.dropdown-toggle.dropdown-toggle-split.responsive-btn(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      span.sr-only Toggle Dropdown
+                    .dropdown-menu
+                      a.dropdown-item.td-bn-download-eng.responsive-btn(href='#') English Only
+                      a.dropdown-item.td-bn-download-spa.responsive-btn(href='#') Spanish Only
+                      .dropdown-divider
+                      a.dropdown-item.responsive-btn(href='#') Github Link
+                  a.btn.btn-info.responsive-btn(href='/') Bluray
+        #tokyo-dome-blacknight-stats
+          .container-fluid.padding-0
+            #black-downloads.row.d-flex.align-items-center.swiper-container
+              .col-3.text-center.swiper-wrapper
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .english-kitsunes.wow.zoomIn
+                    img.img-fluid(src='img/icon/fancy-hat.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold English
+                      |  Downloads
+                    p.release-eng.stat
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .spanish-kitsunes.wow.zoomIn(data-wow-delay='.2s')
+                    img.img-fluid(src='img/icon/fighter-mask.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold Spanish
+                      |  Downloads
+                    p.release-spa.stat
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .total-kitsunes.wow.zoomIn(data-wow-delay='.4s')
+                    img.img-fluid(src='img/icon/earth.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold Total
+                      |  Downloads
+                    p.release-total.stat
+                .slide-container.d-flex.align-items-center.swiper-slide
+                  .last-update.wow.zoomIn(data-wow-delay='.6s')
+                    img.img-fluid(src='img/icon/update.svg', alt='')
+                    p.stat-title
+                      span.font-weight-bold Last
+                      |  Update
+                    p.release-date.stat
+    section#fuelmewith.hidden-md-down
+      .yummy
+        .coffee 
+          a.icon.first.btc(href='#', rel='popover', data-popover-content='#crypto')
+            span.fa.fa-btc.fa-lg
+          a.icon.last.pp(target="_blank", href='https://u.muxy.io/tip/xialexanderix')
+            span.fa.fa-paypal.fa-lg
+          .cup
+            img.img-fluid(src='img/icon/cup.svg')
+      #crypto.text-center.hide
+        p.crypto-name Bitcoin
+        img.img-fluid(src='img/large/btc.svg')
+        p.wallet 1HZxZp2z2DUFp4G3cfLY9DKZRr8MQzrkV2
+
+    section#hide-yo-wallet.container
+      .row
+        .col
+
+    // Script Kiddie Zone | The Vendor Zone
+
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js', type='application/javascript')
+    script(src='vendors/tether/js/tether.min.js', type='application/javascript')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', type='application/javascript')
+    script(src='vendors/material-kit/js/material.min.js', type='application/javascript')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js', type='application/javascript')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' type='application/javascript')
+
+    // Script Kiddie Zone | The Rushed Code
+    script(src='js/main.js', type='application/javascript')

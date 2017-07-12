@@ -1,0 +1,98 @@
+#fuelmewith
+    position: fixed
+    bottom: 0px
+    right: 0px
+    z-index: 9999
+
+.yummy
+    width: 150px
+    margin: 0 auto
+    margin-top: 150px
+    text-align: center
+
+.coffee 
+    a
+        color: white !important
+
+.icon
+    display: inline-block
+    background: #4b798d
+    width: 60px
+    height: 60px
+    color: white
+    margin-left: -30px;
+    margin-right: -35px
+    transition: all 0.5s
+    cursor: pointer
+    span
+        padding-top: 22px
+        opacity: 0
+        transition: all 0.5s
+
+.first,
+.last
+    border-top-left-radius: 50%
+    border-bottom-left-radius: 50%
+    border-top-right-radius: 50%
+    border-bottom-right-radius: 50%
+
+
+.cup
+    position: relative
+    width: 20%
+    top: -42px
+    left: 65px
+    color: white
+    pointer-events: none
+    transition: all 0.5s
+
+.coffee:hover
+    .icon
+        border-radius: 50%
+        margin-left: 5px
+        margin-right: 5px
+        span
+            opacity: 1
+    .cup
+        opacity: 0
+    .btc
+        background: #FF9900
+    .pp
+        background: #009cde
+.hide
+    display: none
+
+.coffee-hover
+    .icon
+        border-radius: 50%
+        margin-left: 5px
+        margin-right: 5px
+        span
+            opacity: 1
+    .cup
+        opacity: 0
+    .btc
+        background: #FF9900
+    .pp
+        background: #009cde
+.hide
+    display: none
+
+#crypto
+    background: #FFF
+    .crypto-name
+        font-weight: 700
+        font-size: 1.4rem
+        text-transform: uppercase
+        margin-bottom: 5%
+    .wallet
+        font-size: 0.6rem
+        font-weight: 700
+        margin-top: 5%
+
+.popover
+    width: 15%
+    
+.popover.bs-tether-element-attached-middle::after,
+.popover.bs-tether-element-attached-middle::before
+    display: none
