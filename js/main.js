@@ -4,6 +4,10 @@
     (Ain't Nobody Got Time For Commenting Dat Code)
 */
 
+$(window).on('load', function () {
+    $(".loader").fadeOut("slow");
+});
+
 $(document).ready(function () {
     new WOW().init();
     $.material.init();
