@@ -1,0 +1,43 @@
+.no-js #loader
+  display: none
+
+.js #loader
+  display: block
+  position: absolute
+  left: 100px
+  top: 0
+
+.se-pre-con
+  position: fixed
+  left: 0px
+  top: 0px
+  width: 100%
+  height: 100%
+  z-index: 9999
+  background: #f3f3f3
+  .bmIcon
+    position: fixed
+    left: 0px
+    top: 0px
+    width: 100%
+    height: 100%
+    z-index: 9999
+    background: url(../img/icon/loading.jpg) center no-repeat
+    -webkit-animation: loading 4.44s linear infinite
+    -moz-animation: loading 4.44s linear infinite
+    animation: loading 4.44s linear infinite
+
+@-moz-keyframes loading
+  100%
+    -moz-transform: rotate(360deg)
+
+
+@-webkit-keyframes loading
+  100%
+    -webkit-transform: rotate(360deg)
+
+
+@keyframes loading
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
