@@ -173,6 +173,7 @@ function hideYoWallet() {
 function gimmeCoffe() {
     $(".pp").attr("href", paypalMeCoffee);
     $(".qr").attr("src", qrBitcoinWallet);
+    $(".walletLink").attr("href", 'https://blockexplorer.com/address/' + bitcoinCoffee);
     $('.wallet').text(bitcoinCoffee);
 }
 
