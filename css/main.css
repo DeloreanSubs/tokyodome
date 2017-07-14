@@ -369,6 +369,11 @@ html {
   background: #FFF;
 }
 
+#crypto .walletLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 #crypto .crypto-name {
   font-weight: 700;
   font-size: 14px;
