@@ -24,7 +24,7 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='vendors/material-kit/css/material-kit.css')
     link(rel='stylesheet', type='text/css', href='css/main.css')
 
-  body
+  body.pageOverflow
     section.loader
       .bmIcon
     section#badass-hero.container-fluid
@@ -107,7 +107,7 @@ html(lang='en')
           .container-fluid
             #black-bd.row.d-flex.align-items-center
               .col-12.col-lg-6.push-lg-6.img-col.d-flex.align-items-center
-                img.img-fluid(src='img/large/blackNight.jpg', alt='Red Night')
+                img.img-fluid(src='img/large/blacknight.jpg', alt='Black Night')
               .col-12.col-lg-6.pull-lg-6.bd-text.text-center.wow.fadeInLeft(data-wow-delay='.2s')
                 .text-container
                   h1.text-uppercase Babymetal
@@ -169,9 +169,10 @@ html(lang='en')
           .cup
             img.img-fluid(src='img/icon/cup.svg')
       #crypto.text-center.hide
-        p.crypto-name Bitcoin
-        img.img-fluid.qr
-        p.wallet
+        a.walletLink(target="_blank")
+          p.crypto-name Bitcoin
+          img.img-fluid.qr
+          p.wallet
 
     section#hide-yo-wallet.container
       .row
