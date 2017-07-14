@@ -4,6 +4,11 @@
     (Ain't Nobody Got Time For Commenting Dat Code)
 */
 
+$(window).on('load', function () {
+    $(".loader").fadeOut("slow");
+    $('body').removeClass('pageOverflow');
+});
+
 $(document).ready(function () {
     new WOW().init();
     $.material.init();
