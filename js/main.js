@@ -6,6 +6,7 @@
 
 $(window).on('load', function () {
     $(".loader").fadeOut("slow");
+    $('body').removeClass('pageOverflow');
 });
 
 $(document).ready(function () {
