@@ -4,6 +4,11 @@
 
 /* Vendors */
 /* Global */
+
+.pageOverflow {
+  overflow: hidden;
+}
+
 .no-js #loader {
   display: none;
 }
