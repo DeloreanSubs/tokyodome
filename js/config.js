@@ -25,7 +25,7 @@ var secondDeloreanBranch = 'blacknight'; // Branch name of the second delorean
 
 /* Buy me a Coffee ( Help me stay awake during the making of the subs :P ) | BEGIN */
 
-var paypalMeCoffee = 'https://u.muxy.io/tip/xialexanderix'; // Link for the paypal link
+var paypalMeCoffee = 'https://twitch.streamlabs.com/xialexanderix'; // Link for the paypal link
 
 var bitcoinCoffee = '1HZxZp2z2DUFp4G3cfLY9DKZRr8MQzrkV2'; // Adress of the bitcoin wallet
 
